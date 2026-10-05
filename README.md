@@ -118,6 +118,20 @@ LTX 模型输出 video ──┼──→ BSAI_VideoMerge ──→ SaveVideo
 
 ---
 
+## 示例工作流 / Example Workflow
+
+仓库内置示例工作流：[`workflows/example_video_merge.json`](workflows/example_video_merge.json)
+
+内置一个完整示例：加载 3 个不同分辨率的视频（H3 横屏 + 微信竖屏 + 单帧合成片段），经 BSAI_VideoMerge letterbox 统一尺寸后输出到 SaveVideo。
+
+This repo includes a ready-to-use example: [`workflows/example_video_merge.json`](workflows/example_video_merge.json) — loads 3 clips of different resolutions (H3 landscape + WeChat portrait + single-frame composite), merges them via BSAI_VideoMerge, and saves with SaveVideo.
+
+将 JSON 文件拖入 ComfyUI 画布即可加载。
+
+Drag the JSON file onto the ComfyUI canvas to load it.
+
+---
+
 ## 常见问题 / FAQ
 
 **Q: 合并后不同片段分辨率不同？**
